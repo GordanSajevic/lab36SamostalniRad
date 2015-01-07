@@ -117,11 +117,12 @@ public class LinkedListInt {
 		Node current = head;
 		int[] array = new int[size];
 		int i = 0;
-		while (i<size)
+		while (current != null)
 		{
 			array[i] = current.value;
 			current = current.next;
 			i++;
+			this.size = i;
 		}
 		return array;
 	}

@@ -16,7 +16,12 @@ public class Test {
 		System.out.println();
 		list.add(23, 1);
 		list.printList();
-		
+		int[] array = list.toArray();
+		System.out.println();
+		for (int i=0; i<list.getSize(); i++)
+		{
+			System.out.println(array[i]);
+		}
 		LinkedListInt list2 = new LinkedListInt();
 		for (int i=6; i<=10; i++)
 		{
