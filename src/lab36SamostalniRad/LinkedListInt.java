@@ -60,6 +60,17 @@ public class LinkedListInt {
 		
 	}
 	
+	public void add(LinkedListInt other)
+	{
+		Node current = other.head;
+		int counter = size;
+		for (int i= counter; i<other.size + counter; i++)
+		{
+			add(current.value);
+			current = current.next;
+		}
+	}
+	
 	public void printList()
 	{
 		Node current = head;

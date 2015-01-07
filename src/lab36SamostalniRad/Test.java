@@ -16,11 +16,15 @@ public class Test {
 		System.out.println();
 		list.add(23, 1);
 		list.printList();
-		int array[] = list.toArray();
-		for (int i=0; i<list.getSize(); i++)
+		
+		LinkedListInt list2 = new LinkedListInt();
+		for (int i=6; i<=10; i++)
 		{
-			System.out.println(array[i]);
+			list.add(i);
 		}
+		list.add(list2);
+		System.out.println();
+		list.printList();
 	}
 
 }
